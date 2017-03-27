@@ -1,0 +1,38 @@
+/* Aqui edita os padrões CSS do novo site! */
+/*RESET FIRST */
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+}
+
+@corbase: #BADA55; /*Substitui essa cor pela que quiser */
+@corfont: black; /*Substitui essa cor pela que quiser */
+@corlogo: #333; /*Põe a cor primaria da logo */
+
+@cor-link: @cor-logo; /*Cor para os links, pode ser a da logo */
+@display: inline; /*Display: inline nos links */
+@cor-hover: darken(@cor-logo, 10%); /* cor hover de links */
+
+@img: "../../images/"; /*Copia o endereço da pasta img aqui */
+
+@font-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Font serifada do website */
+@font-extra: Monaco, Menlo, Consolas, "Courier New", monospace; /*Font aleatoria do website */
+@font-base: @font-serif; /* Font base do site */
+@font-size: 14px; /* Tamanho padrão fontes */
+@font-maior: @font-size * 1.25; /*Font de 18px */
+@font-menor: @font-size * 0.85; /*Font de 12px */
+
+/* Como utilizar
+	a{
+	color: @cor-logo;
+		
+	&:hover{
+		color: @cor-hover;
+		text-decoration: underline;
+	  }
+	}	
+
+*/
+
